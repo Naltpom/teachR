@@ -1,0 +1,35 @@
+.cadre {
+    border: solid 1px #ccc;
+    border-radius: 0.3em;
+    height: 100%;
+    &_header{
+        padding: 10px;
+        border-bottom: solid 1px #ccc;
+        font-size: 30px;
+        background-color: #eee;
+        font-weight: 600;
+        &.img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+        }
+    }
+    &_body{
+        padding: 10px;
+        h3{
+            margin: 0 0 20px 0;
+            padding: 0;
+            font-size: 26px;
+            font-weight: 500;
+        }
+        p{
+            font-size: 18px;
+            padding: 5px;
+        }
+    }
+    &_footer{
+        padding: 10px;
+
+    }
+}
