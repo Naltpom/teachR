@@ -1,19 +1,26 @@
-.bg_{
-    &primary{
+.bg{
+    &_primary{
         background-color: orange;
     }
-    &secondary{
-        background-color: royalblue;;
+    &_secondary{
+        background-color: #007bff;
     }
-    &thirdly{
+    &_thirdly{
         background-color: tomato;
     }
 }
-.text_{
-    &primary{
+.text{
+    &_primary{
         color: #333;
     }
-}
-.text_center{
-    text-align: center;
+    &_secondary{
+        color: #ccc;
+    }
+    &_thirdly{
+        color: #333;
+    }
+
+    &_center{
+        text-align: center;
+    }
 }
