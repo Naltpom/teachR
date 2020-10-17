@@ -22,7 +22,7 @@ class DashboardController
     }
 
     /**
-     * @Route("/", name="dashboard")
+     * @Route("/", name="index")
      */
     public function index(Request $request)
     {
