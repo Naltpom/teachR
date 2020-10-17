@@ -1,10 +1,9 @@
 #footer{
     background: $footerColor;
-    position: absolute;
     bottom: 0;
     width: 100%;
     min-height: 2.5rem;  
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     & p {

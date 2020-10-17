@@ -7,14 +7,15 @@
 @import "icon";
 
 @import "template/index";
+@import "template/cours";
 @import "template/header";
 @import "template/footer";
 
+@import "components/color";
 @import "components/grid";
 @import "components/button";
 @import "components/modal";
 @import "components/cadre";
-@import "components/color";
 
 /* width */
 ::-webkit-scrollbar {

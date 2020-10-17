@@ -1,12 +1,12 @@
 .bg{
     &_primary{
-        background-color: orange;
+        background-color: orange !important;
     }
     &_secondary{
-        background-color: #007bff;
+        background-color: #007bff !important;
     }
     &_thirdly{
-        background-color: tomato;
+        background-color: tomato !important;
     }
 }
 .text{

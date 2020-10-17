@@ -1,0 +1,63 @@
+{% extends 'components/bases/dashboard.html.twig' %}
+{% block content %}
+<div id="cours">
+        <div class="ligne">
+                <h1 class="ml-5"><strong>Prochain cours : le lundi 23 décembre</strong></h1>
+        </div>
+        <div class="ligne">
+                {% for course in courses %}
+                        
+                
+                <div class="box_1-2">
+                        <div class="cadre">
+                                <div class="cadre_header">
+                                        <h3><strong>{{course.title}}</strong></h3>
+                                        <h4 class="item-desc"><strong>Prochain cours : {{course.next}}</strong></h4>
+                                </div>
+                                <div class="cadre_body">
+                                        <p class="flex items_center">
+                                                <span class="icon-backpack icon-size">
+                                                        <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span>
+                                                </span>
+                                                <span class="ml-3 item-title">{{course.student}}</span>
+                                        </p>
+                                        <p class="flex items_center">
+                                                <span class="icon-calendar icon-size">
+                                                        <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span><span class="path22"></span><span class="path23"></span><span class="path24"></span><span class="path25"></span><span class="path26"></span>
+                                                </span>
+                                                <span class="ml-3 flex flex-col">
+                                                        <span class="item-title">{{course.days}}</span>
+                                                        <span class="item-desc">{{course.from}}</span>
+                                                </span>
+                                        </p>
+                                        <p class="flex items_center">
+                                                <span class="icon-clock icon-size">
+                                                        <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span>
+                                                </span>
+                                                <span class="ml-3 flex flex-col">
+                                                        <span class="item-title">{{course.time}}</span>
+                                                        <span class="item-desc">{{course.hour}}</span>
+                                                </span>
+                                        </p>
+                                        <p class="flex items_center">
+                                                <span class="icon-graduation-hat icon-size">
+                                                        <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+                                                </span>
+
+                                                <span class="ml-3 item-title">{{course.teacher}}</span>
+                                        </p>
+                                </div>
+                                <div class="cadre_footer flex items_center justify_center">
+                                        <button class="btn btn_secondary">Détails</button>
+                                </div>
+                        </div>
+                </div>
+                {% endfor %}
+        </div>
+</div>
+
+{% endblock %}
+{% block javascripts %}
+        {{ parent() }}
+        <script>$(function() { $(".active_cours").addClass("active") }); </script>
+{% endblock %}

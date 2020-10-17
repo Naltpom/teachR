@@ -1,0 +1,11 @@
+#cours{
+    .item{
+        &-title{
+            font-weight: bold;
+            color: #333;
+        }
+        &-desc{
+            color: #ccc;
+        }
+    }
+}
