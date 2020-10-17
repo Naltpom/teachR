@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div id="dashboard">
+    <div class="container" id="main">
+        {% include "components/molecules/header.html.twig" %}
+    
+        <div id="content">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+    {% include "components/molecules/footer.html.twig" %}
+</div>
+{% endblock %}

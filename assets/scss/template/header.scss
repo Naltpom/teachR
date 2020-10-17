@@ -1,0 +1,34 @@
+#header {
+    ul {
+        list-style-type: none;
+        margin: 20px 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #eee;
+        border-radius: 0.5em;
+        border: solid 1px #ccc;
+    }
+      
+    li {
+        float: left;
+        & a{
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 24px;
+            text-decoration: none;
+            font-weight: 500;
+            &:hover, &.active{
+                background-color: lightgrey;
+
+            }
+        }
+    }
+    .logo {
+        display: block;
+        padding: 14px 36px 14px 26px;
+        text-align: center;
+        color: gray;
+        font-weight: bold;
+    }
+}

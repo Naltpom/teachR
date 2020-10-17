@@ -1,0 +1,29 @@
+.ligne{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.box_2-3 {
+    width: 66.666666666%;
+    max-width: 66.666666666%;
+    padding: 16px 20px;
+}
+.box_1-3 {
+    width: 33.333333333%;
+    max-width: 33.333333333%;
+    padding: 16px 20px;
+}
+
+.flex{
+    display: flex;
+}
+.items_center{
+    display: flex;
+    align-items: center;
+}
+.justify_center{
+    display: flex;
+    justify-content: center;
+}

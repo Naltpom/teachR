@@ -1,0 +1,48 @@
+{% extends 'components/bases/dashboard.html.twig' %}
+{% block content %}
+<div id="index">
+        <div class="ligne">
+                <div class="box_2-3 items_center"><span class="icon-user-circle-o"></span> <h1>Bonjour, Pierre</h1></div>
+                <div class="box_1-3">
+                        <div class="cadre">
+                                <div class="cadre_header">Prochain cours</div>
+                                <div class="cadre_body">
+                                        <h3>Le lundi 23 décembre</h3>
+                                        <p>Cours de mathématiques, avec Charles</p>
+                                </div>
+                                <div class="cadre_footer">
+                                        <button>Détails</button>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="ligne">
+                <div class="box_1-3">
+                        <div class="cadre">
+                                <div class="cadre_header bg_primary text_center">235x180</div>
+                                <div class="cadre_body"></div>
+                                <div class="cadre_footer"></div>
+                        </div>
+                </div>
+                <div class="box_1-3">
+                        <div class="cadre">
+                                <div class="cadre_header bg_secondary text_center">235x180</div>
+                                <div class="cadre_body"></div>
+                                <div class="cadre_footer"></div>
+                        </div>
+                </div>
+                <div class="box_1-3">
+                        <div class="cadre">
+                                <div class="cadre_header bg_thirdly text_center">235x180</div>
+                                <div class="cadre_body"></div>
+                                <div class="cadre_footer"></div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+{% endblock %}
+{% block javascripts %}
+        {{ parent() }}
+        <script>$(function() { $(".active_index").addClass("active") }); </script>
+{% endblock %}
